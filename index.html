@@ -51,6 +51,14 @@ header{padding:16px 7%;display:flex;justify-content:space-between;align-items:ce
 .heritage .btn{background:linear-gradient(110deg,#741c20,#a94d3d)}
 .kudai .btn{background:linear-gradient(110deg,#078f89,#16a9bc)}
 .btn span{font-size:1.1rem}
+.soon{display:none;position:fixed;inset:0;z-index:50;align-items:center;justify-content:center;padding:20px;background:rgba(13,20,57,.72)}
+.soon:target{display:flex}
+.soon-box{position:relative;max-width:420px;width:100%;padding:36px 28px 30px;background:#fff;border-radius:20px;text-align:center;box-shadow:0 22px 65px rgba(0,0,0,.3)}
+.soon-box:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;border-radius:20px 20px 0 0;background:linear-gradient(90deg,#078f89,#43c4d7)}
+.soon-icon{width:54px;height:54px;margin:0 auto 16px;display:grid;place-items:center;border-radius:16px;background:#e1f7f4;color:#078f89;font-size:25px}
+.soon-box h3{font-size:1.4rem;color:var(--navy);font-weight:800;margin-bottom:8px}
+.soon-box p{font-size:.92rem;color:var(--muted);margin-bottom:22px}
+.soon-box .btn{background:linear-gradient(110deg,#078f89,#16a9bc)}
 footer{background:radial-gradient(ellipse at 50% 0%,#26396b 0%,transparent 65%),#101943;color:#c2cbe0;text-align:center;padding:48px 20px 24px}
 .footer-brand{font-size:1.25rem;font-weight:800;color:white;margin-bottom:12px}
 footer p{font-size:.83rem;margin-bottom:8px;color:#b5c0d6}
@@ -109,7 +117,7 @@ footer strong{color:white}
         <h3>Subham Asthu</h3>
         <p>Tamil Nadu's connector platform for verified Priests (வாத்தியார்), Traditional Cooks (சமையல்காரர்), and authentic Pooja Samagri guides and local stores.</p>
       </div>
-      <a class="btn" href="https://bharaniinnovations.in" target="_blank" rel="noopener">Visit Subham Asthu <span>→</span></a>
+      <a class="btn" href="https://subhamasthu.bharaniinnovations.in/" target="_blank" rel="noopener">Visit Subham Asthu <span>→</span></a>
     </article>
 
     <article class="card kudai">
@@ -119,7 +127,7 @@ footer strong{color:white}
         <h3>Kudai</h3>
         <p>Our dedicated utility solution built under Bharani Innovations—bringing simple, reliable digital access to users.</p>
       </div>
-      <a class="btn" href="https://bharaniinnovations.in" target="_blank" rel="noopener">Visit Kudai <span>→</span></a>
+      <a class="btn" href="#kudai-soon">Visit Kudai <span>→</span></a>
     </article>
   </section>
 </main>
@@ -132,5 +140,14 @@ footer strong{color:white}
   <div class="footer-divider"></div>
   <div class="copyright">© 2026 Bharani Innovations. All rights reserved.</div>
 </footer>
+<div class="soon" id="kudai-soon" role="dialog" aria-labelledby="kudai-soon-title">
+  <div class="soon-box">
+    <div class="soon-icon">◈</div>
+    <h3 id="kudai-soon-title">Kudai — Under Construction</h3>
+    <p>We are building something useful. Kudai will be available soon. Please check back later.</p>
+    <a class="btn" href="#">Close</a>
+  </div>
+</div>
+
 </body>
 </html>
